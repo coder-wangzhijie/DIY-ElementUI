@@ -1,0 +1,115 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button, input, textarea{margin:0;padding:0;box-sizing:border-box;line-height: 1;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{
+  display:block;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,th{
+  font-weight: normal;
+}
+html,body,fieldset,img,iframe,abbr{
+  border: 0;
+}
+i,cite,em,var,address,dfn{
+  font-style: normal;
+}
+[hidefocus],summary{
+  outline: 0;
+}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+body,textarea,input,button,select,keygen,legend{
+  color:#666;
+  font-size:12px;
+  outline:0;
+  font-family:'microsoft yahei', arial,  sans-serif;
+  background: none;
+  box-shadow: none; /*火狐红框*/
+
+}
+textarea{overflow:auto;resize:none;}
+a,button{background:none;border:none;cursor: pointer;}
+a{-webkit-tap-highlight-color:rgba(255,0,0,0);outline:none;text-decoration:none;}
+
+
+
+
+/* 总结 */
+
+/* 高度 */
+html, body {
+  height: 100%;
+  background-color: #FFF;
+}
+/* ul列表 */
+li{
+  list-style:none;
+}
+/* 表单元素 */
+/* 外观样式重置 */
+input,select,textarea{
+  appearance:none;
+  -webkit-appearance:none;
+  -ms-appearance:none;
+  -o-appearance:none;
+  border:none;
+  outline:none;
+  background:none;
+  -webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+/* 下拉框，点击后的虚线边框 */
+select:focus{
+  appearance:none;
+  border: none;
+  outline:none;
+  background:none;
+}
+/* Mozilla 下拉三角丑陋 */
+select:-moz-focusring{
+	color: transparent;
+	text-shadow: 0 0 0 #705a39;
+}
+/* safri 自动填充短信验证码，input 会有黄色背景 */
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { 
+  background-color: #fff;
+  background-image: none;
+  color: rgb(0, 0, 0); 
+}
+input:-webkit-autofill, 
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active { 
+  -webkit-transition-delay: 99999s;
+  -webkit-transition: color 99999s ease-out, background-color 99999s ease-out;
+}
+
+
+
+/* 滚动条样式，待验证 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #ccc;
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: #999;
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: #ccc;
+  -webkit-border-radius: 6px;
+}
+/* vue 闪烁 */
+[v-cloak] {
+  display: none;
+}

@@ -1,2 +1,63 @@
-# DIY-ElementUI
-do it yourself of the element ui
+# Step
+
+- 基本及配置
+  - `npm init`
+  - Webpack
+    - webpack
+    - webpack-cli
+    - webpack-dev-server
+  - HTML
+    - html-webpack-plugin
+  - CSS
+    - css-loader
+    - style-loader
+  - ES6+
+    - @babel/core
+    - @babel/cli
+    - @babel/preset-env
+    - babel-loader
+  - Vue
+    - vue/vue-router/vuex
+    - vue-loader
+    - vue-template-compiler
+- 目录
+  - Tips
+    - 最主要的是思路和功能实现，目录或者实现方式是其次。
+    - 尽可能保持和源码一致
+    - 为了保证思路，先按照自己的思路和习惯进行搭建
+    - 最后再整理（封装、解耦、合并等等）
+  - build：webpack 构建相关
+    - webpack.dev.js
+  - examples：（相当于 VueCli 模板下的 src，入口文件存放的地方）
+    - entry.js
+    - app.vue
+    - assets
+      - img
+      - css
+      - js
+    - components
+    - views/pages
+  - packages：真正的组件开发目录
+- 页面开发，进入最熟悉的页面开发
+  - 页面结构搭建
+    - header
+      - 公用组件，注册为全局组件
+    - content
+      - VueRooter...
+    - footer
+      - 公用组件，注册为全局组件
+
+
+- sourceCode
+  - `npm run dev`
+    - `npm run bootstrap`
+      - `npm i || yarn`
+    - `npm run build:file`
+      - `node build/bin/iconInit.js`
+        - 自动生成 icon.json 配置文件
+      - `node build/bin/build-entry.js`
+      - `node build/bin/i18n.js`
+      - `node build/bin/version.js`
+    - `cross-env NODE_ENV=development webpack-dev-server --config build/webpack.demo.js`
+      - `./examples/entry.js`
+    - `node build/bin/template.js`
